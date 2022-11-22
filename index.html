@@ -11,11 +11,132 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.6.9/sweetalert2.min.css">
     <!-- Google Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
+  <!--Header & banner start-->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand mt-4" href="#">
+        <p class="me-5">Designin</p> 
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav m-auto p-auto">
+                <li class="nav-item px-1">
+                    <a class="nav-link" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item px-1">
+                    <a class="nav-link" href="#product">Product</a>
+                </li>
+                <li class="nav-item px-1">
+                    <a class="nav-link" href="#about">About Us</a>
+                </li>
+                <li class="nav-item px-1">
+                    <a class="nav-link" href="#packages">Packages</a>
+                </li>
+                <li class="nav-item px-1">
+                    <a class="nav-link" href="todos.html">Contact</a>
+                </li>
+            </ul>
+            <form class="d-flex masuk" role="search">
+              <button type="button" class="btn me-2 rounded-pill pe-4 ps-4 " style="border-color: rgb(0, 53, 151); color:rgb(0, 53, 151);" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                Login
+              </button>
+              <button class="btn rounded-pill  daftar" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3">Sign Up</button>
+            </form>
+        </div>
+    </div>
+</nav>
+<div class="container rounded-5" >
+  <div class="row">
+    <div class="col-3 col-md-6 col-lg-6 p-5">
+      <div class="judul_awal pt-5" style="font-family: Poppins; ">
+        <h1 style="font-weight: 700; font-size: 55px;" >Welcome To <br>Designin</h1>
+        <p style="font-size: 18px; color: rgb(0, 53, 151);">Menyediakan Jasa Dsain Logo yang Profesional <br> cepat dengan harga terjangkau dan Berkualitas.</p>
+        <button type="button" class="btn rounded-pill"  style="font-size: 20px; border-color: rgb(33, 111, 255); border-width: 2px;"> <a href="#packages" style="text-decoration: none; color: rgb(33, 111, 255);"> Order Now </a> </button>
+      </div>
+    </div>
+    <div class="col-6 col-md-6 col-lg-6 d-flex justify-content-end">
+      <img src="img/home.jpg" alt="" style="width: 100%;">
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Email or Username</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">Password</label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Batal</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="masuk()">Masuk</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Sign Up</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="inputEmail4">
+          </div>
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="inputPassword4">
+          </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputAddress">
+          </div>
+          <div class="col-12">
+            <label for="inputAddress2" class="form-label">password</label>
+            <input type="password" class="form-control" id="inputAddress2">
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                Saya yakin dengan yang sudah saya isi
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Batal</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="daftar()">Masuk</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <!--Header & banner end -->
     <!--Product feature start-->
-    <div class="product_feature1 m-5">
+    <div id="product" class="product_feature1 m-5">
         <div class="container">
             <div class="judul text-center">
                 <h5 style="font-family: Nunito; font-weight: 700; color: rgb(0, 53, 151);">Our Feature</h5>
@@ -153,7 +274,7 @@
     <!--Product feature end-->
 
     <!--About & pricing start-->
-    <div class="container">
+    <div id="about" class="container">
         <div class="judul text-center">
             <h5 style="font-family: Nunito; font-weight: 700; color: rgb(0, 53, 151);">About Us</h5>
             <h2 style="font-family: Nunito; font-weight: 800; color: rgb(0, 53, 151);">Tentang Designin</h2>
@@ -204,7 +325,7 @@
         </div>
       </div>
     </div>
-    <div class="container mb-5">
+    <div class="container mb-5"id="packages">
     <div class="judul text-center mb-3">
         <h5 style="font-family: Nunito; font-weight: 700; color: rgb(0, 53, 151);">Pricing</h5>
         <h2 style="font-family: Nunito; font-weight: 800; color: rgb(0, 53, 151);">Harga yang kami tawarkan</h2>
