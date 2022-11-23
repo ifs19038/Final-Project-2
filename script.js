@@ -55,8 +55,8 @@ function daftar(){
     icon: 'success',
     title: 'Sign in successfully'
   })
-}
 
+}
 function follow(){
   Swal.fire(
     'Behasil',
