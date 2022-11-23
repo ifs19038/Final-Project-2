@@ -55,4 +55,12 @@ function daftar(){
     icon: 'success',
     title: 'Sign in successfully'
   })
+
+}
+function follow(){
+  Swal.fire(
+    'Behasil',
+    'Terima kasih sudah mmengikuti kami',
+    'success'
+  )
 }
